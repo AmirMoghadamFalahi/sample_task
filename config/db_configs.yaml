@@ -1,0 +1,5 @@
+local:
+  user: postgres
+  password: some_password
+  host: localhost
+  dbname: autonews

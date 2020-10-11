@@ -1,3 +1,6 @@
+import json
+import time
+import numpy as np
 import psycopg2
 import requests
 import yaml
@@ -33,7 +36,8 @@ class Crawler:
                             "access_control varchar NULL, "
                             "headline varchar NULL, "
                             "link varchar NULL, "
-                            "got_single bool NULL);")
+                            "got_single bool NULL,"
+                            "paragraph_dic varchar NULL);")
         self.conn.commit()
         print('table created!')
 
@@ -53,7 +57,13 @@ class Crawler:
         payload = {}
         headers = {}
 
-        response = requests.request("GET", url, headers=headers, data=payload)
+        got_res = False
+        while got_res == False:
+            try:
+                response = requests.request("GET", url, headers=headers, data=payload, timeout=20)
+                got_res = True
+            except:
+                time.sleep(60)
 
         response = response.text.encode('utf8')
 
@@ -84,10 +94,14 @@ class Crawler:
 
             category_timestamp = article.find("div", {"class": "feature-article-category-timestamp"})
             category = category_timestamp.span.text.strip()
-            timestamp = category_timestamp.find("span",
-                                                {"class": "text-gray article-update-time divider-gray"})
-            timestamp = int(timestamp['data-lastupdated'].split('--')[1].strip())
-            article_datetime = datetime.datetime.fromtimestamp(timestamp)
+            try:
+                timestamp = category_timestamp.find("span",
+                                                    {"class": "text-gray article-update-time divider-gray"})
+                timestamp = int(timestamp['data-lastupdated'].split('--')[1].strip())
+                article_datetime = datetime.datetime.fromtimestamp(timestamp)
+            except:
+                timestamp = None
+                article_datetime = None
             headline = article.find('div', {'class': 'feature-article-headline'})
             link = headline.a.get('href')
             headline = headline.text.strip()
@@ -108,14 +122,65 @@ class Crawler:
         except Exception as e:
             print(e)
 
-    def get_single_page(self):
-        pass
+    def get_single_page_links(self):
 
-    def parse_single_page(self):
-        pass
+        self.cursor.execute('select id, link from search_result where got_single is not true order by id')
+        links_data = np.array(self.cursor.fetchall())
 
-    def insert_single_page(self):
-        pass
+        return links_data
+
+    @staticmethod
+    def get_single_page(link):
+
+        if "http" not in link:
+            url = "https://www.autonews.com" + link
+        else:
+            url = link
+
+        payload = {}
+        headers = {}
+
+        got_res = False
+        cnt = 0
+        while got_res == False and cnt < 3:
+
+            try:
+                response = requests.request("GET", url, headers=headers, data=payload, timeout=10)
+                got_res = True
+                response = response.text.encode('utf8')
+            except Exception as e:
+                print(e)
+                cnt += 1
+                time.sleep(20)
+
+        if got_res == False:
+            response = None
+
+        return response
+
+    @staticmethod
+    def parse_single_page(response):
+
+        soup = BeautifulSoup(response, 'html.parser')
+        del response
+        body = soup.findAll('div', {'class': 'item--paragraph--type--body field__item'})
+        del soup
+
+        paragraph_num = 1
+        paragraphs_dic = {}
+        for body_part in body:
+            paragraphs = body_part.findAll('p')
+            for p in paragraphs:
+                text = p.text.strip()
+                paragraphs_dic[paragraph_num] = text
+                paragraph_num += 1
+
+        return paragraphs_dic
+
+    def insert_single_page(self, id, parsed_dict):
+
+        self.cursor.execute('update search_result set got_single=true, paragraph_dic=%s where id=%s',
+                            (json.dumps(parsed_dict, ensure_ascii=False), int(id)))
 
     def search_pipeline(self, autocommit=False, prepare_table_search_results=False):
 
@@ -126,6 +191,9 @@ class Crawler:
 
         page = 0
         while True:
+            if page <= 3956 - 1:
+                page+=1
+                continue
             print('page_number:', page)
             response = self.get_search_results(page=page)
             state = self.parse_search_results(response=response)
@@ -133,8 +201,21 @@ class Crawler:
                 break
             page += 1
 
-    def single_page_pipeline(self):
-        pass
+    def single_page_pipeline(self, autocommit):
+        self.conn, self.cursor = self.make_db_connection(autocommit=autocommit)
+
+        links_data = self.get_single_page_links()
+        for i in range(len(links_data)):
+
+            # if i % 1000 == 0:
+            print(i, links_data[i, 1])
+
+            response = self.get_single_page(link=links_data[i, 1])
+            if response != None:
+                parsed_dict = self.parse_single_page(response=response)
+                self.insert_single_page(id=links_data[i, 0], parsed_dict=parsed_dict)
+            else:
+                self.insert_single_page(id=links_data[i, 0], parsed_dict=response)
 
 
 if __name__ == '__main__':
@@ -146,5 +227,6 @@ if __name__ == '__main__':
     server = 'local'
 
     crawler = Crawler(conn_dict=conn_dict, server=server)
-    crawler.search_pipeline(prepare_table_search_results=False, autocommit=True)
+    # crawler.search_pipeline(prepare_table_search_results=False, autocommit=True)
+    crawler.single_page_pipeline(autocommit=True)
 

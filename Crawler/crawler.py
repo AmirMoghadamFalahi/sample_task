@@ -191,9 +191,6 @@ class Crawler:
 
         page = 0
         while True:
-            if page <= 3956 - 1:
-                page+=1
-                continue
             print('page_number:', page)
             response = self.get_search_results(page=page)
             state = self.parse_search_results(response=response)

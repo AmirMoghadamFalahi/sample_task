@@ -1,35 +1,103 @@
-<mxfile host="app.diagrams.net" modified="2020-10-17T20:23:05.824Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" etag="NiFAy-8roqOE5tb-v1Sr" version="13.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-18T19:05:42.738Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" etag="DebzF8Mfuq1zNlRdXmMv" version="13.8.0" type="github">
   <diagram id="TtR9DweCRIf-0LsSmYzl" name="Page-1">
-    <mxGraphModel dx="868" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1240" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="jetVmbuxpDWHMJllAORU-1" value="autonews.com" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="20" y="150" width="80" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="jetVmbuxpDWHMJllAORU-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jetVmbuxpDWHMJllAORU-2" target="jetVmbuxpDWHMJllAORU-6">
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jetVmbuxpDWHMJllAORU-1" target="jetVmbuxpDWHMJllAORU-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jetVmbuxpDWHMJllAORU-2" value="Crawler" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="130" y="165" width="120" height="80" as="geometry" />
+        <mxCell id="jetVmbuxpDWHMJllAORU-1" value="autonews.com" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="155" y="157.5" width="80" height="92.5" as="geometry" />
         </mxCell>
-        <mxCell id="jetVmbuxpDWHMJllAORU-3" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jetVmbuxpDWHMJllAORU-1" target="jetVmbuxpDWHMJllAORU-2">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="280" as="sourcePoint" />
-            <mxPoint x="450" y="230" as="targetPoint" />
+        <mxCell id="jetVmbuxpDWHMJllAORU-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="jetVmbuxpDWHMJllAORU-2" target="jetVmbuxpDWHMJllAORU-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="jetVmbuxpDWHMJllAORU-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="195" y="432.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="jetVmbuxpDWHMJllAORU-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jetVmbuxpDWHMJllAORU-6" target="jetVmbuxpDWHMJllAORU-11">
+        <mxCell id="jetVmbuxpDWHMJllAORU-2" value="Crawler" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="135" y="295" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jetVmbuxpDWHMJllAORU-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="jetVmbuxpDWHMJllAORU-6" target="jetVmbuxpDWHMJllAORU-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jetVmbuxpDWHMJllAORU-6" value="stored data on a Postgres DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="270" y="137.5" width="70" height="135" as="geometry" />
+        <mxCell id="jetVmbuxpDWHMJllAORU-6" value="stored data on a Postgres DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="295" y="267.5" width="70" height="135" as="geometry" />
         </mxCell>
-        <mxCell id="jetVmbuxpDWHMJllAORU-8" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px&quot;&gt;First Solution to give a try:&lt;br&gt;Information extraction v0.1&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="250" y="30" width="370" height="50" as="geometry" />
+        <mxCell id="jetVmbuxpDWHMJllAORU-8" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px&quot;&gt;First Solution to give a try:&lt;br&gt;Information extraction v0.1&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="375" y="50" width="370" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="jetVmbuxpDWHMJllAORU-11" value="Indexing data on an Elastic Search" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="180" width="120" height="50" as="geometry" />
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jetVmbuxpDWHMJllAORU-11" target="sx_z5hCeW-B-nWLktyjP-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jetVmbuxpDWHMJllAORU-11" value="Indexing data on an Elastic Search" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="405" y="310" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="sx_z5hCeW-B-nWLktyjP-1" target="sx_z5hCeW-B-nWLktyjP-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-1" value="Using Haystack to read data, and retrieve required information, e.g. making questions about business partnerships" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="402.5" width="230" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="sx_z5hCeW-B-nWLktyjP-4" target="sx_z5hCeW-B-nWLktyjP-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-4" value="Parse the acquired answers to find out knowledge and store&amp;nbsp;them" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="615" y="412.5" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-11" value="" style="endArrow=classic;html=1;exitX=0.2;exitY=1.011;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.667;entryY=0.013;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="sx_z5hCeW-B-nWLktyjP-16" target="jetVmbuxpDWHMJllAORU-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="525" y="370" as="sourcePoint" />
+            <mxPoint x="195" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-16" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="245" y="160" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-17" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="255" y="170" width="50" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-18" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="315" y="171.25" width="50" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-19" value="Finding other data sources to enrich the data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="375" y="165" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="sx_z5hCeW-B-nWLktyjP-24" target="sx_z5hCeW-B-nWLktyjP-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="sx_z5hCeW-B-nWLktyjP-24" target="sx_z5hCeW-B-nWLktyjP-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="195" y="695" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-24" value="Extracting the data of all important entities (companies, people, etc.)" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#ffffff;fillColor=#60a917;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="135" y="430" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FFFFFF;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="sx_z5hCeW-B-nWLktyjP-26" target="sx_z5hCeW-B-nWLktyjP-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-26" value="&lt;span&gt;Using this data to make better (narrow) questions that Haystack would answer with higher precision.&lt;br&gt;(e.g. Which companies are in partnership with BMW?)&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#ffffff;fillColor=#60a917;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="215" y="570" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="sx_z5hCeW-B-nWLktyjP-30" target="sx_z5hCeW-B-nWLktyjP-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-30" value="Using the acquired dataset to &quot;parse&quot; the data more accurately." style="rounded=0;whiteSpace=wrap;html=1;fontColor=#ffffff;fillColor=#60a917;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="600" y="660" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-34" value="Test the results using cross validation. For example if we ask model for business partners of BMW, and the model find that this company is in partnership with Honda, then if we ask the model to predict partners of Honda, BMW should be in the answers." style="rounded=1;whiteSpace=wrap;html=1;fontColor=#ffffff;fillColor=#60a917;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="715" y="235" width="250" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-37" value="&lt;h1&gt;&lt;font color=&quot;#009900&quot; style=&quot;font-size: 21px ; font-weight: normal&quot;&gt;Green boxes are where I believe that could be improved&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="810" y="56.25" width="255" height="108.75" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

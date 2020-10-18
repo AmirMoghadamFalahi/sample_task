@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-18T19:05:42.738Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" etag="DebzF8Mfuq1zNlRdXmMv" version="13.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-18T19:07:14.635Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" etag="ESNu5IsYp7RsVJi_tLNA" version="13.8.0" type="github">
   <diagram id="TtR9DweCRIf-0LsSmYzl" name="Page-1">
     <mxGraphModel dx="1240" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -96,7 +96,7 @@
         <mxCell id="sx_z5hCeW-B-nWLktyjP-34" value="Test the results using cross validation. For example if we ask model for business partners of BMW, and the model find that this company is in partnership with Honda, then if we ask the model to predict partners of Honda, BMW should be in the answers." style="rounded=1;whiteSpace=wrap;html=1;fontColor=#ffffff;fillColor=#60a917;strokeColor=#2D7600;" vertex="1" parent="1">
           <mxGeometry x="715" y="235" width="250" height="155" as="geometry" />
         </mxCell>
-        <mxCell id="sx_z5hCeW-B-nWLktyjP-37" value="&lt;h1&gt;&lt;font color=&quot;#009900&quot; style=&quot;font-size: 21px ; font-weight: normal&quot;&gt;Green boxes are where I believe that could be improved&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+        <mxCell id="sx_z5hCeW-B-nWLktyjP-37" value="&lt;h1&gt;&lt;font color=&quot;#009900&quot; style=&quot;font-size: 21px ; font-weight: normal&quot;&gt;Green boxes are what I believe that could be done to improve the model.&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="810" y="56.25" width="255" height="108.75" as="geometry" />
         </mxCell>
       </root>
